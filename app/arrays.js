@@ -15,7 +15,12 @@ exports.arraysAnswers = {
   },
 
   sum : function(arr) {
-
+      var sum = 0,
+          i = 0;
+      for (; i < arr.length; ++i) {
+          sum += arr[i];
+      }
+      return sum;
   },
 
   remove : function(arr, item) {
